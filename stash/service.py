@@ -93,7 +93,7 @@ class Stash:
                     {
                         "from": f"{old['symbol']} on {old['project']}",
                         "to": move.to.label,
-                        "usd": usd,
+                        "usd": round(usd, 2),
                         "reason": move.reason,
                     }
                 )
@@ -110,7 +110,7 @@ class Stash:
         led = self.ledger
         return {
             "deposited_usd": round(led.deposited_usd, 2),
-            "cash_usd": round(led.cash_usd, 2),
+            "cash_usd": round(led.cash_usd, 2) + 0.0,
             "total_usd": led.total_usd,
             "pnl_usd": round(led.total_usd - led.deposited_usd, 2),
             "positions": [

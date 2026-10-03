@@ -20,6 +20,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument(
         "--sample", action="store_true", help="use bundled sample pools instead of the live API"
     )
+    parser.add_argument("--pools", type=Path, help="use pools from a DefiLlama-style JSON file")
     sub = parser.add_subparsers(dest="cmd", required=True)
     sub.add_parser("wallet")
     sub.add_parser("topup")
@@ -32,8 +33,9 @@ def main(argv: list[str] | None = None) -> None:
     args = parser.parse_args(argv)
 
     cfg = StashConfig.from_dict({"network": args.network, "home": args.home})
-    if args.sample:
-        pools = json.loads(SAMPLE.read_text())["data"]
+    pools_file = args.pools or (SAMPLE if args.sample else None)
+    if pools_file:
+        pools = json.loads(pools_file.read_text())["data"]
         stash = Stash(cfg, scanner=lambda c: solana_opportunities(pools, c))
     else:
         stash = Stash(cfg)
