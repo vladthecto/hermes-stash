@@ -14,7 +14,7 @@ Hermes Stash gives your agent its own Solana wallet and one simple job:
 
 That's it. No dashboards, no tokens, no leverage.
 
-**Videos:** [pitch (2:20)](media/pitch.mp4) · [demo (1:46)](media/demo.mp4)
+**Videos:** [pitch (1:56)](media/pitch.mp4) · [demo (1:46)](media/demo.mp4)
 
 ```mermaid
 flowchart LR
