@@ -1,0 +1,131 @@
+{
+ "status": "success",
+ "data": [
+  {
+   "pool": "kamino-usdc",
+   "chain": "Solana",
+   "project": "kamino-lend",
+   "symbol": "USDC",
+   "apy": 8.4,
+   "tvlUsd": 420000000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": true,
+   "underlyingTokens": [
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+   ]
+  },
+  {
+   "pool": "marginfi-usdc",
+   "chain": "Solana",
+   "project": "marginfi",
+   "symbol": "USDC",
+   "apy": 7.1,
+   "tvlUsd": 150000000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": true,
+   "underlyingTokens": [
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+   ]
+  },
+  {
+   "pool": "jito-jitosol",
+   "chain": "Solana",
+   "project": "jito-liquid-staking",
+   "symbol": "JITOSOL",
+   "apy": 7.6,
+   "tvlUsd": 2100000000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": false,
+   "underlyingTokens": [
+    "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"
+   ]
+  },
+  {
+   "pool": "marinade-msol",
+   "chain": "Solana",
+   "project": "marinade-liquid-staking",
+   "symbol": "MSOL",
+   "apy": 7.2,
+   "tvlUsd": 900000000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": false,
+   "underlyingTokens": [
+    "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So"
+   ]
+  },
+  {
+   "pool": "sanctum-inf",
+   "chain": "Solana",
+   "project": "sanctum-infinity",
+   "symbol": "INF",
+   "apy": 8.0,
+   "tvlUsd": 300000000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": false,
+   "underlyingTokens": [
+    "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm"
+   ]
+  },
+  {
+   "pool": "orca-sol-usdc",
+   "chain": "Solana",
+   "project": "orca-dex",
+   "symbol": "SOL-USDC",
+   "apy": 24.0,
+   "tvlUsd": 80000000,
+   "exposure": "multi",
+   "ilRisk": "yes",
+   "stablecoin": false,
+   "underlyingTokens": [
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+   ]
+  },
+  {
+   "pool": "tiny-usdc",
+   "chain": "Solana",
+   "project": "tinyfarm",
+   "symbol": "USDC",
+   "apy": 19.0,
+   "tvlUsd": 200000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": true,
+   "underlyingTokens": [
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+   ]
+  },
+  {
+   "pool": "degen-usdc",
+   "chain": "Solana",
+   "project": "degenvault",
+   "symbol": "USDC",
+   "apy": 380.0,
+   "tvlUsd": 30000000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": true,
+   "underlyingTokens": [
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+   ]
+  },
+  {
+   "pool": "aave-usdc",
+   "chain": "Ethereum",
+   "project": "aave-v3",
+   "symbol": "USDC",
+   "apy": 9.0,
+   "tvlUsd": 900000000,
+   "exposure": "single",
+   "ilRisk": "no",
+   "stablecoin": true,
+   "underlyingTokens": [
+    "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+   ]
+  }
+ ]
+}

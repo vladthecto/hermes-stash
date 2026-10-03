@@ -1,0 +1,42 @@
+name: hermes-stash
+version: 0.1.0
+description: A tiny autonomous Solana stash. Asks for $100 top-ups, scans yield aggregators, invests, and rebalances daily.
+author: Vlad (vladthecto)
+provides_tools:
+  - stash_wallet
+  - stash_request_topup
+  - stash_record_deposit
+  - stash_scan
+  - stash_invest
+  - stash_checkup
+  - stash_portfolio
+
+config_schema:
+  network:
+    type: str
+    default: devnet
+    description: "devnet or mainnet-beta"
+  rpc_url:
+    type: str
+    default: ""
+    description: "Custom Solana RPC (optional)"
+  topup_usd:
+    type: float
+    default: 100
+    description: "How much to ask for on every top-up"
+  max_positions:
+    type: int
+    default: 3
+    description: "How many pools to spread across"
+  min_tvl_usd:
+    type: float
+    default: 5000000
+    description: "Ignore pools smaller than this"
+  rebalance_threshold:
+    type: float
+    default: 1.5
+    description: "Move money only when a better pool beats the current one by this many APY points"
+  dry_run:
+    type: bool
+    default: true
+    description: "Paper trading. Set false on mainnet-beta to swap through Jupiter"

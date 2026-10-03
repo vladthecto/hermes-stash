@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="sol" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#9945FF"/>
+      <stop offset="0.55" stop-color="#43B4CA"/>
+      <stop offset="1" stop-color="#14F195"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.48" r="0.55">
+      <stop offset="0" stop-color="#2A1B4D"/>
+      <stop offset="1" stop-color="#0B0A14"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7A3"/>
+      <stop offset="1" stop-color="#E9A93B"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#glow)"/>
+  <g fill="url(#sol)">
+    <g id="wing">
+      <path d="M176 228 C146 186 96 150 26 136 C44 162 60 176 80 186 C64 192 54 202 48 214 C74 212 94 214 110 222 C98 232 92 244 88 258 C114 252 134 254 152 266 C150 278 154 290 164 300 Z"/>
+      <path d="M80 186 C104 196 132 208 160 236 M110 222 C128 230 146 244 160 262" stroke="#0B0A14" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+    </g>
+    <use href="#wing" transform="translate(512 0) scale(-1 1)"/>
+  </g>
+  <circle cx="256" cy="262" r="96" fill="#0F0D1C" stroke="url(#sol)" stroke-width="14"/>
+  <g fill="url(#gold)">
+    <rect x="206" y="292" width="100" height="22" rx="11"/>
+    <rect x="216" y="264" width="100" height="22" rx="11"/>
+    <rect x="200" y="236" width="100" height="22" rx="11"/>
+    <rect x="212" y="208" width="88" height="22" rx="11"/>
+  </g>
+</svg>
